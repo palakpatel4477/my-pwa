@@ -1,0 +1,42 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+  }
+
+.container{
+    display:flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 6px #008080;
+    flex:1;
+}
+
+main{
+    background-color: #dfdfdf;
+    padding: 20px;
+    flex: 5;
+}
+
+@media only screen and (max-width:600px){
+    body{
+        background-color: #008080;
+    }
+    .container{
+        min-height: 50vh;
+    }
+    header{
+        border-bottom: solid 2px #008080;
+        flex:1;
+    }
+    .main p{
+        font-size: 46px;
+    }
+
+}
