@@ -1,5 +1,5 @@
 if('serviceWorker' in navigator){
-    navigator.serviceWorker.register('../service-worker.js',{ scope:'/' })
+    navigator.serviceWorker.register('/my-pwa/service-worker.js',{ scope:'/my-pwa/' })
     .then((registration) => {
         console.log('Success. Scope:', registration.scope);
     })
